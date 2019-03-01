@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            margin: 100px auto;
+            position: relative;
+        }
+        .circle,
+        .oval {
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        }
+        .square,
+        .rectangle {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        }
+        #size2 {
+            display: none;
+        }
+        #panel {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="panel">
+    <input type="color" id="colorInput">
+    <br>
+    <input type="number" name="" id="size">    
+    <input type="number" name="" id="size2">    
+
+    <p id="fig1">
+    <input type="radio" name="figure" id="sq" value="square" checked>
+    <label for="sq">Square</label>
+    <input type="radio" name="figure" id="cir" value="circle">
+    <label for="cir">Circle</label>
+    </p>
+    <p id="fig2">
+    <input type="radio" name="figure" id="ov" value="oval">
+    <label for="cir">Oval</label>
+    <input type="radio" name="figure" id="rect" value="rectangle">
+    <label for="cir">Rectangle</label>
+    </p> 
+    </div>   
+
+    <div id="area"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
